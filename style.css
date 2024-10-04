@@ -1,0 +1,286 @@
+.container {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+}
+
+/* navbar */
+.navbar {
+  margin: 20px 40px;
+  height: 70px;
+  }
+  
+a.navbar-brand {
+  color: #14044d;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+a.navbar-brand span {
+  display: inline-block;
+  font-size: 35px;
+  color:#c6c5d4;
+}
+
+#navbar-divider {
+  background-color: lightgray;
+  width: 300px;
+  height: 3px;
+  margin: 10px -10px;
+}
+
+/* form */
+.swap-container {
+  margin: 50px auto;
+  background-color: rgb(246, 244, 244);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.swap-container form {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form-left, .form-right {
+  width: 33vw;
+}
+
+.form-separator {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.swap-container h2 {
+  color: #14044d;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.swap-container h3 {
+  color: #716b94;
+  font-size: 30px;
+}
+
+/* button */
+.swap-container .button-swap {
+  background-color: #79e7e7;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;    
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.swap-container .button-swap:hover {
+  background-color: #48cbd9;
+}
+
+/* text */
+.swap-container label {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+/* input group */
+.custom-input-group {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.custom-input-group input[type="number"] {
+  flex: 1;
+  padding: 10px;
+  padding-bottom: -20px;
+  border: none; 
+  border-radius: 4px 0 0 4px;
+  background-color: white;
+  color: black;
+  font-size: 50px;
+  height: 70px;
+  width: 100%;
+}
+
+.input-amount-sgd {
+  margin-top: -110px;
+  padding-top: -10px;
+  position: relative;
+  left: 10px;
+  bottom: 0px;
+}
+
+.input-divider {
+  width: 1px;
+  height: 45px;
+  background-color: lightgray;
+  margin: 0 10px;
+}
+
+.dropdown {
+  display: flex;
+}
+
+.dropdown-toggle {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none; /* Keep this if you're controlling visibility with JavaScript */
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 4px 4px 0;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  max-height: 200px; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.swap-container .button-swap {
+  transition: background-color 0.3s ease; /* Adjust the duration and easing as desired */
+}
+
+.swap-container .button-swap:hover {
+  background-color: #48cbd9;
+}
+
+.swap-container .button-swap:disabled {
+  background-color: #ccc; /* Set a different color for disabled state */
+  cursor: not-allowed; /* Change the cursor to indicate it's disabled */
+}
+
+.swap-container .button-swap:disabled:hover {
+  background-color: #ccc; /* Keep the background color the same on hover when disabled */
+}
+
+
+
+/* price list */
+.prices-container {
+  max-width: 800px;
+  margin: 5px auto;
+  padding: 20px;
+}
+
+.table-wrapper {
+  max-height: 400px;
+  overflow: hidden; 
+}
+
+#prices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#prices-table th, #prices-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#prices-table th {
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#prices-table td {
+  text-align: center;
+}
+
+.table-body {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.table-body table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+.table-body thead {
+  position: sticky; 
+  top: 0;
+  background: #f0f0f0; 
+  z-index: 10; 
+}
+
+.change-negative {
+  color: red;
+  padding-left: 30px;
+}
+
+.change-positive {
+  color: green;
+  padding-left: 30px;
+}
+
+.coin-name {
+  align-items: center;
+  width: 130px;
+}
+
+.price-last {
+  text-align: center;
+}
+
+.coin-name img {
+  margin-right: 5px;
+  margin-left: 15px;
+}
+
+/* prompt */
+
+.modal {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.modal-contenta {
+  background-color: #fefefe;
+  padding: 30px;
+  margin: 20% 40%;
+  border: 1px solid #888;
+  } 
+  
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
